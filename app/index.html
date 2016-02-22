@@ -43,29 +43,44 @@
   <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <ul class="menu">
-    <li><a href="#/view1">view1</a></li>
-    <li><a href="#/view2">view2</a></li>
-  </ul>
+  <div class="menu-wrapper">
+    <div class="container">
+      <div class="col-md-2">
+        <img class="menu-blubeta-logo" src="assets/images/blubeta-logo.svg">
+        <span class="blubeta-word-logo">blubeta</span>
+      </div>
+      <div class="col-md-10">
+        <ul class="menu menu-top" ng-controller="scrollCtrl">
+          <li><a ng-click="scrollTo('welcome')">home</a></li>
+          <li><a ng-click="scrollTo('about')">about</a></li>
+          <li><a ng-click="scrollTo('why-us')">our difference</a></li>
+          <li><a ng-click="scrollTo('services')">services</a></li>
+          <li><a ng-click="scrollTo('affiliates')">affiliates</a></li>
+          <li><a ng-click="scrollTo('faq')">FAQ</a></li>
+          <li><a ng-click="scrollTo('contact')">contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
   <!--[if lt IE 7]>
       <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
   <![endif]-->
 
-  <div ng-view></div>
-
-  <div>Angular seed app: v<span app-version></span></div>
+  <div ui-view class="content-wrapper"></div>
 
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.17/angular-ui-router.min.js"></script>
   <script src="app.js"></script>
-  <script src="view1/view1.js"></script>
-  <script src="view2/view2.js"></script>
+  <script src="home/home.js"></script>
   <script src="components/version/version.js"></script>
   <script src="components/version/version-directive.js"></script>
   <script src="components/version/interpolate-filter.js"></script>
+  <script src="https://use.typekit.net/jkp7enw.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </body>
 </html>
