@@ -1,30 +1,235 @@
 /* app css stylesheet */
 
-.menu {
+/* 
+grey #ADB6B5
+dark grey 6c7373
+blue #085DAD
+light-blue #21BEDE
+green #8CC739
+*/
+
+.pt-sans-narrow{
+  font-family: "pt-sans-narrow";
+}
+
+.industry{
+  font-family: 'industry';
+}
+
+.centered{
+  text-align:center;
+}
+
+.light-blue{
+  color: #21BEDE;
+}
+
+.blubeta-word-logo-header{
+  margin-left:1em;
+  font-family: 'industry';
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.menu-wrapper{
+  padding:1em 0em;
+  position: fixed;
+  background-color:white;
+  width:100%;
+  z-index:100;
+}
+
+.menu{
+  text-transform: uppercase;
+  font-family: "pt-sans-narrow";
+}
+
+.menu a{
+  color: #6c7373;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 1.2em;
+  font-weight:100;
+}
+
+.menu-top {
   list-style: none;
-  border-bottom: 0.1em solid black;
-  margin-bottom: 2em;
+  margin-bottom: 0;
   padding: 0 0 0.5em;
+  display: inline-block;
+  text-align: center;
 }
 
-.menu:before {
-  content: "[";
-}
-
-.menu:after {
-  content: "]";
-}
-
-.menu > li {
+.menu-top > li {
   display: inline;
+  padding-right: 2em;
+  cursor: pointer;
 }
 
-.menu > li:before {
-  content: "|";
-  padding-right: 0.3em;
+.menu-top > li:before {
+  padding-right: 1em;
 }
 
-.menu > li:nth-child(1):before {
+.menu-top > li:nth-child(1):before {
   content: "";
   padding: 0;
+}
+
+.menu-blubeta-logo {
+  max-width:2em;
+  display:inline-block;
+}
+
+.menu-offset {
+  padding-top: 20vh;
+}
+
+.section-offset{
+  margin-top: 20vh;
+}
+
+.content-wrapper {
+}
+
+.partial-images{
+  width:80%;
+}
+
+.wrapper {
+  min-height:100vh;
+}
+
+.content-wrapper {
+  background-image: url('assets/images/background-hexa.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/* GROUPINGS */
+
+#affiliates h2, #faq h2 {
+  text-align: center;
+}
+
+/* SECTIONS */
+
+/* WELCOME */
+h1.welcome {
+  font-family: 'fatfrank';
+  font-size: 7em;
+  color: white;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+}
+
+/* ABOUT */
+
+#about{
+
+}
+
+#about .border-top{
+  border-top: 2px solid #ADB6B5;
+  margin-top:10vh;
+  padding-top:5vh;
+}
+
+#about .words{
+  font-size: 800%;
+}
+
+#about .logo-vspacing{
+  margin-top:10vh;
+}
+
+
+#about .short p{
+  text-align: justify;
+  margin:0;
+}
+
+/* SERVICES  */
+.services{
+  height: 100vh;
+  background-color: #085DAD;
+  color:white;
+}
+
+/* CONTACT US  */
+.contact{}
+
+.contact input{
+  width:100%;
+  height: 2em;
+  margin: 2em 0em;
+  padding: 2em;
+  color: #6c7373;
+  background-color: #e6e6e6;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 1px solid #fff;
+}
+
+.contact textarea{
+  width:100%;
+  padding: 2em;
+  margin: 2em 0em;
+  color: #6c7373;
+  background-color: #e6e6e6;
+  border-radius: 10px 10px 10px 10px;
+  -moz-border-radius: 10px 10px 10px 10px;
+  -webkit-border-radius: 10px 10px 10px 10px;
+  border: 1px solid #fff;
+}
+
+.contact button{
+  float:right;
+}
+
+/* FAQ  */
+#faq {
+  
+}
+
+#faq ul{
+  list-style-type: none;
+}
+
+#faq .question {
+  color: #085DAD;
+  font-width: bold;
+  font-size:1.2em;
+  margin-top:2vh;
+}
+
+#faq .answer {
+  text-decoration: none;
+}
+
+/* FOOTER  */
+#footer{
+  height: 20vh;
+  background-color: #ADB6B5;
+  color:white;
+  padding-top:1em;
+}
+
+#footer .footer-blubeta-logo{
+
+}
+
+#footer .menu-footer{
+  text-transform: uppercase;
+  color:white;
+  list-style-type:none;
+}
+
+#footer .menu-footer li{
+}
+
+#footer .menu-footer li a{
+  color:white;
+}
+
+#footer .social-media{
 }
