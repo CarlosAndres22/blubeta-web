@@ -5,7 +5,8 @@ angular.module('blubeta', [
   'ngRoute',
   'ui.router',
   'blubeta.home',
-  'blubeta.version'
+  'blubeta.version',
+  'duScroll'
 ]).
 
 config(['$stateProvider','$urlRouterProvider', function($routeProvider,$urlRouterProvider) {
