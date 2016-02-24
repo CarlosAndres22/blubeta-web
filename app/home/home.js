@@ -24,11 +24,14 @@ angular.module('blubeta.home', ['ngRoute'])
 
 }])
 
-.controller('scrollCtrl', ['$scope', '$location', '$anchorScroll', function($scope,$location,$anchorScroll) {
-  $scope.scrollTo = function(id){
+.controller('scrollCtrl', ['$scope', '$location', '$anchorScroll', '$document', function($scope,$location,$anchorScroll,$document) {
+
+  $scope.goTo = function(id){
     console.log("Clicked on " + id)
-    $location.hash(id);
-    $anchorScroll();
+    var element = angular.element(document.getElementById(id));
+    $document.scrollToElementAnimated(element,0,500).then(function(){
+      console.log('Finished animation');
+    });
   }
 }])
 
