@@ -33,9 +33,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="app.css">
+  <link rel="stylesheet" href="responsive-app.css">
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/normalize.css">
   <link rel="stylesheet" href="bower_components/html5-boilerplate/dist/css/main.css">
+  <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
 
   <script src="bower_components/tether/dist/js/tether.min.js"></script>
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
@@ -47,17 +49,20 @@
     <div class="container">
       <div class="col-md-2">
         <img class="menu-blubeta-logo" src="assets/images/blubeta-logo.svg">
-        <span class="blubeta-word-logo">blubeta</span>
+        <span class="blubeta-word-logo-header">blubeta</span>
       </div>
       <div class="col-md-10">
-        <ul class="menu menu-top" ng-controller="scrollCtrl">
-          <li><a ng-click="scrollTo('welcome')">home</a></li>
-          <li><a ng-click="scrollTo('about')">about</a></li>
-          <li><a ng-click="scrollTo('why-us')">our difference</a></li>
-          <li><a ng-click="scrollTo('services')">services</a></li>
-          <li><a ng-click="scrollTo('affiliates')">affiliates</a></li>
-          <li><a ng-click="scrollTo('faq')">FAQ</a></li>
-          <li><a ng-click="scrollTo('contact')">contact</a></li>
+        <ul class="menu menu-top hidden-xs-down visible-sm-up" ng-controller="scrollCtrl">
+          <li><a ng-click="goTo('welcome')">home</a></li>
+          <li><a ng-click="goTo('about')">about</a></li>
+          <li><a ng-click="goTo('why-us')">our difference</a></li>
+          <li><a ng-click="goTo('services')">services</a></li>
+          <li><a ng-click="goTo('affiliates')">affiliates</a></li>
+          <li><a ng-click="goTo('faq')">FAQ</a></li>
+          <li><a ng-click="goTo('contact')">contact</a></li>
+          <li><span class="socicon-twitter"></span></li>
+          <li><span class="socicon-facebook"></span></li>
+          <li><span class="socicon-linkedin"></span></li>
         </ul>
       </div>
     </div>
@@ -74,6 +79,7 @@
   -->
   <script src="bower_components/angular/angular.js"></script>
   <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="bower_components/angular-scroll/angular-scroll.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.17/angular-ui-router.min.js"></script>
   <script src="app.js"></script>
   <script src="home/home.js"></script>
