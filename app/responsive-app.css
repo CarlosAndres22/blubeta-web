@@ -1,0 +1,44 @@
+/* 
+  up is min-width -> up from min-width
+  down is max-width -> down from max-width 
+*/
+
+/* xs */
+@media (max-width: 33.9em) { 
+  .xs-centered{
+    text-align: center;
+  }
+  #welcome h1{
+    font-size: 4em;
+    font-size: 13vw;
+  }
+  #why-us img, #location img{
+    margin-bottom:5vh;
+  }
+  #about img.blubeta-logo{
+    width: 50vw;
+  }
+  .h2-main{
+    text-align:center;
+  }
+}
+
+/* sm */
+@media (max-width: 47.9em) {  }
+/* md */
+@media (max-width: 61.9em) {  }
+/* lg */
+@media (max-width: 74.9em) {  }
+
+
+/* sm */
+@media (min-width: 34em) { }
+  #why-us ul{
+    padding-left:0;
+  }
+/* md */
+@media (min-width: 48em) { }
+/* lg */
+@media (min-width: 62em) { }
+/* xl */
+@media (min-width: 75em) { }
