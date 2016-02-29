@@ -21,6 +21,7 @@ green
 
 body{
   color: #6c7373;
+  font-family: 'Helvetica';
 }
 
 ul {
@@ -223,9 +224,8 @@ h1.welcome {
   margin-top:0;
   font-family: 'fatfrank';
   font-size: 10ch;
-  color: #085DAD;
-  text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
-  margin-bottom:.2em;
+  color: #8CC739;
+  margin-bottom:5vh;
 }
 
 #welcome ul{
@@ -233,7 +233,7 @@ h1.welcome {
 }
 
 #welcome img{
-  margin-top:5vh;
+
 }
 
 /*********/
@@ -285,6 +285,13 @@ h1.welcome {
 
 #vision-mission p{
   text-align:center;
+}
+
+#vision, #mission{
+}
+
+#mission{
+  margin-top: 5vh;
 }
 
 /*************/
