@@ -158,7 +158,7 @@ a {
 }
 
 .menu-offset {
-  padding-top: 20vh;
+  padding-top: 14vh;
 }
 
 .section-offset{
@@ -181,7 +181,7 @@ a {
 }
 
 .content-wrapper:after {
-  background-image: url('assets/images/background-hexa.png');
+  /*background-image: url('assets/images/background-hexa.png');*/
   background-repeat: no-repeat;
   background-size: contain;
 
@@ -223,8 +223,17 @@ h1.welcome {
   margin-top:0;
   font-family: 'fatfrank';
   font-size: 10ch;
-  color: white;
+  color: #085DAD;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 1);
+  margin-bottom:.2em;
+}
+
+#welcome ul{
+  padding-left:0;
+}
+
+#welcome img{
+  margin-top:5vh;
 }
 
 /*********/
